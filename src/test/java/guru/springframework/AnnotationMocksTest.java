@@ -11,11 +11,12 @@ import java.util.Map;
  * Created by jt on 2018-10-29.
  */
 public class AnnotationMocksTest {
+// chapter 105. Creating Mockito Mocks with Annotations, not needed
 
-    @Mock
+    @Mock // will be initialised
     Map<String, Object> mapMock;
 
-    @BeforeEach
+    @BeforeEach // for each test method we create a Mock + inject into the class
     void setUp() {
         MockitoAnnotations.initMocks(this);
     }

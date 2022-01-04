@@ -10,6 +10,8 @@ import java.util.Map;
 /**
  * Created by jt on 2018-10-29.
  */
+// JUnit 5 extension, MockitoExtension.class>in beforeEach it runs initMocks.
+// JT - says cleaner than @BeforeEach>calling MockitoAnnotations.initMocks(this);
 @ExtendWith(MockitoExtension.class)
 public class JUnitExtensionTest {
 
